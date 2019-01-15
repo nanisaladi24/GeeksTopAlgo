@@ -1,0 +1,1 @@
+This directory contains few key algorithms/problems based on linked lists.
