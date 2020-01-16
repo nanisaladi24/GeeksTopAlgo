@@ -11,7 +11,7 @@ class Graph:
     def __init__(self): 
   
         # default dictionary to store graph 
-        #self.graph = defaultdict(list) 
+        self.graph = defaultdict(list) 
         #self.graph = {} #doesn't work
   
     # function to add an edge to graph 
