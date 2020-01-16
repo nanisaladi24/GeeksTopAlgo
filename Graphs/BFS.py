@@ -11,7 +11,8 @@ class Graph:
     def __init__(self): 
   
         # default dictionary to store graph 
-        self.graph = defaultdict(list) 
+        #self.graph = defaultdict(list) 
+        #self.graph = {} #doesn't work
   
     # function to add an edge to graph 
     def addEdge(self,u,v): 
@@ -59,9 +60,15 @@ g.addEdge(1, 2)
 g.addEdge(2, 0) 
 g.addEdge(2, 3) 
 g.addEdge(3, 3) 
-  
+
+def printGraph(g):
+    for i in g.graph.keys():
+        print str(i)+" : "+str(g.graph[i])
+
 print ("Following is Breadth First Traversal"
                   " (starting from vertex 2)") 
 g.BFS(2) 
+
+printGraph(g)
 
 print ("\n")
